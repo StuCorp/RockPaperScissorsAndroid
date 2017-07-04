@@ -52,11 +52,11 @@ public class Game {
     protected String displayWinner(int result){
         switch(result){
             case 0:
-                return "it'ss a draw";
+                return "DRAW GAME!";
             case 1:
-                return "it'ss a win for you";
+                return "YOU WIN!";
             case -1:
-                return "ohhhh noo!";
+                return "YOU LOSE!";
             default :
                 return "game broken";
         }

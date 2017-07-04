@@ -35,10 +35,13 @@ public class ResultActivity extends AppCompatActivity {
         String computerMove = game.computer.getMove().getType();
         Integer result = game.compareMoves(playerMove, computerMove);
         String resultDisplay = game.displayWinner(result);
+        String userMove = String.format("You drew a %s", playerMove);
+        String cpuMove = String.format("Computer drew a %s", computerMove);
 
-        player_choice.setText(playerMove);
-        computer_choice.setText(computerMove);
+        player_choice.setText(userMove);
+        computer_choice.setText(cpuMove);
         result_display.setText(resultDisplay);
+
 
     }
 
